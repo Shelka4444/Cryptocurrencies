@@ -7,13 +7,13 @@ A recongized investment bank is entering the cryptocurrency market and is intere
 To begin, the cryptocurrency data is preprocessed, meaning that the data is cleaned up to include only information which is deemed valid and necessary for creating a streamlined report. Null values are dropped as are columns with data which will not effect the integrity of the analysis. A cleaned cryptocurrency dataframe is stored and looks as follows:
 
 <p align='center'>
-          <img src="https://github.com/Shelka4444/Cryptocurrencies/blob/main/Images/Cleaned_DF.png" alt="Crypto DataFrame" width = 800>
+          <img src="https://github.com/Shelka4444/Cryptocurrencies/blob/main/Images/Cleaned_DF.png" alt="Crypto DataFrame" width = 600>
                                             </p>
                                             
 Using the StandardScaler algorithm, the cryptocurrency dataframe is scaled in preparation for the Principal Componenent Analysis (PCA) algorithm. PCA reduces the dimensions of the dataframe to, in this case, three principal components (PC1, PC2, PC3). Reducing dimensions not only assists the machines running the algorithms to run faster and more efficiently by transforming a large dataset into consolidated relational data without compromising the directionality of the original datasource.   
                                             
-<p align='center>
-          <img src="https://github.com/Shelka4444/Cryptocurrencies/blob/main/Images/PCA_DF.png" alt="PCA DataFrame" width = 800>
+<p align='center'>
+          <img src="https://github.com/Shelka4444/Cryptocurrencies/blob/main/Images/PCA_DF.png" alt="PCA DataFrame" width = 500>
                                             </p>  
 Next, an Elbow Curve is used to determine the best value for K (see visualization below). In this case, k=4 is the appropriate value.
 
